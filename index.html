@@ -16,7 +16,7 @@
 
     <div class="heading">
         <img src="images/logo.png">
-        Credential Vault
+        <p> Credential Vault</p>
     </div>
     <div id="option">
         <button class="selected" id="autofill_option">Autofill</button>
@@ -24,15 +24,22 @@
     </div>
     <hr>
     <div id="popup-content">
-        <label for="username">Username</label>
-        <input type="text" id="username">
-        <button id="copybutton_username" onclick="copy('username')">Copy</button>
+        <div class="feild">
 
-        <label for="password">Password</label>
-        <input type="password" id="password">
-        <button class="copybutton"id="copybutton_password" onclick="copy('password')">Copy</button>
-        <div id="Error">
+            <label for="username">Username</label>
+            <div>
 
+                <input type="text" id="username">
+                <button id="copybutton_username" onclick="copy('username')">Copy</button>
+            </div>
+        </div>
+        <div class="feild">
+            <label for="password">Password</label>
+            <div>
+                <input type="password" id="password">
+                <button class="copybutton" id="copybutton_password" onclick="copy('password')">Copy</button>
+            </div>
+            <div id="Error"></div>
         </div>
         <button id></button>
         <button id="loginButton">Send Request</button>

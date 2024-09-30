@@ -11,10 +11,7 @@
     --dark : #112a2f;
     --color : white;
     --submit : #3edb75;
-  
-  
     --xxl : 16pt;
-  
     --xl : 12pt;
   }
   
@@ -23,12 +20,11 @@
   
   body {
       border-radius: 10px;
-      width: 500px;
-      height: 1000px;
-      /* background-color: var(--bg-color); */
+    
+      background-image: linear-gradient(120deg, #1e3c72 0%, #2a5298 100%);
       display: flex;
       font-family: "DM Sans","serif";
-      background-image: url('images/background.jpg');
+    
       background-position: center;
       background-size: cover;
       flex-direction: column;
@@ -39,8 +35,13 @@
       text-align: center;
       font-size: var(--xxl);
       font-weight: bold;
-      margin-top: 4px;
-      margin-bottom: 4px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .heading img{
+      width: 10em;
+      height: 10em;
     }
     
     #option{
@@ -69,34 +70,43 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      
+
+    }
+    .feild{
+      display: flex;
+      flex-direction: column;
+      gap: .5em;
+      width: 95%;
+      ;
+      
+    }
+    .feild div{
+      display: flex;
+    }
+    .feild input{
+      flex-grow: 1;
     }
     #popup-content label{
-      font-size: var(--xl);
+      font-size: var(--xxl);
       align-self: baseline ;
     }
     #popup-content input{
       border: 1px solid var(--color);
-      width: 80%;
-      height: 25px;
+      width: 90%;
+      height: 3em;
       border-radius: 10px;
       font-family: "DM Sans";
       padding: 1px 8px;
       color: var(--color);
-      display: inline;
-
-  
-  
-    }
-    .copybutton{
-      display: inline;
+      
     }
   
     #loginButton{
       background-color: var(--submit) ;
       margin-top: 20px;
-      width: 80%;
-      height: 30px;
+      width: 100%;
+      height: 4em;
       border-radius: 10px;
       color: #112e11;
   
@@ -115,5 +125,5 @@
     .selected{
       font-weight: 800;
       background-color: var(--bg-color);
-      
     }
+   
