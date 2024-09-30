@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Credential Vault</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <img src="images/logo.png">
+        Credential Vault
+    </div>
+    <div id="option">
+        <button class="selected" id="autofill_option">Autofill</button>
+        <button id="gen_pass">Generate</button>
+    </div>
+    <hr>
+    <div id="popup-content">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <button id="copybutton_username" onclick="copy('username')">Copy</button>
+
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button class="copybutton"id="copybutton_password" onclick="copy('password')">Copy</button>
+        <div id="Error">
+
+        </div>
+        <button id></button>
+        <button id="loginButton">Send Request</button>
+
+    </div>
+    <div id="Message">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

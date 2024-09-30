@@ -1,0 +1,119 @@
+*{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  
+  }
+  
+  :root{
+  
+    --bg-color : #6458b2;
+    --dark : #112a2f;
+    --color : white;
+    --submit : #3edb75;
+  
+  
+    --xxl : 16pt;
+  
+    --xl : 12pt;
+  }
+  
+  
+  
+  
+  body {
+      border-radius: 10px;
+      width: 500px;
+      height: 1000px;
+      /* background-color: var(--bg-color); */
+      display: flex;
+      font-family: "DM Sans","serif";
+      background-image: url('images/background.jpg');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      color: var(--color);
+    }
+  
+    .heading{
+      text-align: center;
+      font-size: var(--xxl);
+      font-weight: bold;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+    
+    #option{
+      display: flex;
+      gap: 10px;
+      /* align-items: center; */
+      justify-content: center ;
+    }
+    #option button{
+      color: var(--color);
+      border-radius: 10px;
+      padding: 5px 4px;
+      border: 1px solid var(--bg-color);
+      font-family: "DM Sans", "serif";
+      width: 100px;
+      cursor: pointer;
+      /* backdrop-filter: blur(10px); */
+      /* border: 1px solid var(--color); */
+    }
+    hr{
+      border: 1px solid var(--color);
+      width: 100%;
+      margin: 15px 0px;
+    }
+    #popup-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    #popup-content label{
+      font-size: var(--xl);
+      align-self: baseline ;
+    }
+    #popup-content input{
+      border: 1px solid var(--color);
+      width: 80%;
+      height: 25px;
+      border-radius: 10px;
+      font-family: "DM Sans";
+      padding: 1px 8px;
+      color: var(--color);
+      display: inline;
+
+  
+  
+    }
+    .copybutton{
+      display: inline;
+    }
+  
+    #loginButton{
+      background-color: var(--submit) ;
+      margin-top: 20px;
+      width: 80%;
+      height: 30px;
+      border-radius: 10px;
+      color: #112e11;
+  
+      font-family: "DM Sans";
+      cursor: pointer;
+      font-weight: 800;
+  
+    }
+    #loginButton:hover{
+      background-color: #a9fac5;
+    }
+    #loginButton:active{
+      transform: translate(1px,1px);
+    }
+  
+    .selected{
+      font-weight: 800;
+      background-color: var(--bg-color);
+      
+    }
